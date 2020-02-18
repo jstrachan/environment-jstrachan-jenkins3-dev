@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: jstrachan
+    provider: github
+    repository: jenkinsfilerunner-image-sample
+  name: jstrachan-jenkinsfilerunner-image-sample
+spec:
+  description: Imported application for jstrachan/jenkinsfilerunner-image-sample
+  httpCloneURL: https://github.com/jstrachan/jenkinsfilerunner-image-sample.git
+  org: jstrachan
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: jenkinsfilerunner-image-sample
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/jstrachan/jenkinsfilerunner-image-sample.git
