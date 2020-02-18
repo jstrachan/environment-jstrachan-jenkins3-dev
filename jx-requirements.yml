@@ -3,7 +3,7 @@ autoUpdate:
   schedule: ""
 bootConfigURL: https://github.com/jenkins-x/jenkins-x-boot-helmfile-config
 cluster:
-  clusterName: jstrachan-jenkins3
+  clusterName: jstrachan-jenkins4
   devEnvApprovers:
   - jstrachan
   environmentGitOwner: jstrachan
