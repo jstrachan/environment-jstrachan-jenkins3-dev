@@ -1,0 +1,9 @@
+helmDefaults:
+  atomic: true
+  force: true
+  timeout: 520
+  verify: true
+  wait: true
+releases:
+- name: repositories
+  repository: "../repositories"
