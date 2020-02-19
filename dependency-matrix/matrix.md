@@ -2,4 +2,4 @@
 
 Dependency | Sources | Version | Mismatched versions
 ---------- | ------- | ------- | -------------------
-[jstrachan/jenkinsfilerunner-image-sample](https://github.com/jstrachan/jenkinsfilerunner-image-sample.git) |  | []() | 
+[jstrachan/custom-jenkins-sample](https://github.com/jstrachan/custom-jenkins-sample.git) |  | []() | 

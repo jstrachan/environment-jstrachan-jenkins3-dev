@@ -1,7 +1,7 @@
 dependencies:
 - host: github.com
   owner: jstrachan
-  repo: jenkinsfilerunner-image-sample
-  url: https://github.com/jstrachan/jenkinsfilerunner-image-sample.git
+  repo: custom-jenkins-sample
+  url: https://github.com/jstrachan/custom-jenkins-sample.git
   version: ""
   versionURL: ""
