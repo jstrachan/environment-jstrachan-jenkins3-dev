@@ -2,4 +2,4 @@
 
 Dependency | Sources | Version | Mismatched versions
 ---------- | ------- | ------- | -------------------
-[jstrachan/custom-jenkins-sample](https://github.com/jstrachan/custom-jenkins-sample.git) |  | []() | 
+[jstrachan/custom-jenkins-sample2](https://github.com/jstrachan/custom-jenkins-sample2.git) |  | []() | 
