@@ -1,0 +1,117 @@
+
+Showing logs for build [32mjstrachan-environment-jstrachan-qg9nq-3[0m stage [32mpr-checks[0m and container [32mstep-credential-initializer-45vr9[0m
+{"level":"warn","ts":1582201346.3343086,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1582201346.334646,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mjstrachan-environment-jstrachan-qg9nq-3[0m stage [32mpr-checks[0m and container [32mstep-working-dir-initializer-h7mcd[0m
+{"level":"warn","ts":1582201347.793288,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1582201347.795881,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mjstrachan-environment-jstrachan-qg9nq-3[0m stage [32mpr-checks[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mjstrachan-environment-jstrachan-qg9nq-3[0m stage [32mpr-checks[0m and container [32mstep-git-source-jstrachan-environment-jstrachan-qg9nq-pv45k[0m
+{"level":"warn","ts":1582201354.038342,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1582201355.0696876,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/environment-*********-jenkins3-dev.git @ master in path /workspace/source"}
+
+Showing logs for build [32mjstrachan-environment-jstrachan-qg9nq-3[0m stage [32mpr-checks[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:2481a1781f07fd9c2cecca85910cfb1ad508d658,1:fe2bff8aa34cfb2065d3fe708b9b95d5f444ab80
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git fetch origin --unshallow fe2bff8aa34cfb2065d3fe708b9b95d5f444ab80: 2481a1781f07fd9c2cecca85910cfb1ad508d658:
+DEBUG: ran git fetch --unshallow origin fe2bff8aa34cfb2065d3fe708b9b95d5f444ab80: 2481a1781f07fd9c2cecca85910cfb1ad508d658: in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git branch
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git checkout master
+DEBUG: ran git checkout master in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git reset --hard 2481a1781f07fd9c2cecca85910cfb1ad508d658
+DEBUG: ran git reset --hard 2481a1781f07fd9c2cecca85910cfb1ad508d658 in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git clean -fd .
+DEBUG: ran clean --force -d . in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git merge fe2bff8aa34cfb2065d3fe708b9b95d5f444ab80
+DEBUG: ran git merge fe2bff8aa34cfb2065d3fe708b9b95d5f444ab80 in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git log --format=%H%x1f%an%x1f%ae%x1f%cn%x1f%ce%x1f%s%n%b%x1e 2481a1781f07fd9c2cecca85910cfb1ad508d658..HEAD
+Merged SHA fe2bff8aa34cfb2065d3fe708b9b95d5f444ab80 with commit message 'chore(deps): bump https://github.com/*********/custom-jenkins-sample2.git' into base branch master
+Merged SHA ff7f5577aa77f2cbc14dcc560ad43ec937e5303f with commit message 'chore(deps): bump https://github.com/*********/custom-jenkins-sample.git' into base branch master
+Merged SHA 6cd103c8b7ff166168cbce9fc552fe4d1a0a6695 with commit message 'chore(deps): bump https://github.com/*********/jenkinsfilerunner-image-sample.git' into base branch master
+
+Showing logs for build [32mjstrachan-environment-jstrachan-qg9nq-3[0m stage [32mpr-checks[0m and container [32mstep-create-helmfile[0m
+Cloning the Jenkins X versions repo https://github.com/*********/jenkins-x-versions.git with ref refs/heads/master to /builder/home/.**/jenkins-x-versions
+
+Showing logs for build [32mjstrachan-environment-jstrachan-qg9nq-3[0m stage [32mpr-checks[0m and container [32mstep-lint-helmfile-system[0m
+Adding repo **************** https://raw.githubusercontent.com/jenkinsci/kubernetes-operator/master/chart
+"****************" has been added to your repositories
+
+Adding repo stable https://kubernetes-charts.storage.googleapis.com
+"stable" has been added to your repositories
+
+Updating repo
+Hang tight while we grab the latest from your chart repositories...
+...Successfully got an update from the "****************" chart repository
+...Successfully got an update from the "stable" chart repository
+Update Complete. ⎈ Happy Helming!⎈ 
+
+Fetching stable/nginx-ingress
+Linting release=nginx-ingress, chart=/tmp/316581809/nginx-ingress/1.28.3/stable/nginx-ingress/nginx-ingress
+==> Linting /tmp/316581809/nginx-ingress/1.28.3/stable/nginx-ingress/nginx-ingress
+
+1 chart(s) linted, 0 chart(s) failed
+
+
+Showing logs for build [32mjstrachan-environment-jstrachan-qg9nq-3[0m stage [32mpr-checks[0m and container [32mstep-lint-helmfile-apps[0m
+Adding repo **************** https://raw.githubusercontent.com/jenkinsci/kubernetes-operator/master/chart
+"****************" has been added to your repositories
+
+Adding repo jenkins-x http://chartmuseum.jenkins-x.io
+"jenkins-x" has been added to your repositories
+
+Adding repo jenkins-x https://storage.googleapis.com/chartmuseum.jenkins-x.io
+"jenkins-x" has been added to your repositories
+
+Updating repo
+Hang tight while we grab the latest from your chart repositories...
+...Successfully got an update from the "****************" chart repository
+...Successfully got an update from the "stable" chart repository
+...Successfully got an update from the "jenkins-x" chart repository
+Update Complete. ⎈ Happy Helming!⎈ 
+
+Building dependency release=jenkins-servers, chart=../jenkins-servers
+Fetching ****************/****************
+Fetching jenkins-x/**boot-helmfile-resources
+Fetching jenkins-x/nexus
+Fetching jenkins-x/lighthouse
+Fetching jenkins-x/tekton
+Fetching jenkins-x/chartmuseum
+Linting release=****************, chart=/tmp/083053578/****************/latest/****************/****************/****************
+==> Linting /tmp/083053578/****************/latest/****************/****************/****************
+
+1 chart(s) linted, 0 chart(s) failed
+
+Linting release=**boot-helmfile-resources, chart=/tmp/083053578/**boot-helmfile-resources/0.0.53/jenkins-x/**boot-helmfile-resources/**boot-helmfile-resources
+==> Linting /tmp/083053578/**boot-helmfile-resources/0.0.53/jenkins-x/**boot-helmfile-resources/**boot-helmfile-resources
+
+1 chart(s) linted, 0 chart(s) failed
+
+Linting release=nexus, chart=/tmp/083053578/nexus/latest/jenkins-x/nexus/nexus
+==> Linting /tmp/083053578/nexus/latest/jenkins-x/nexus/nexus
+
+1 chart(s) linted, 0 chart(s) failed
+
+Linting release=lighthouse, chart=/tmp/083053578/lighthouse/0.0.432/jenkins-x/lighthouse/lighthouse
+==> Linting /tmp/083053578/lighthouse/0.0.432/jenkins-x/lighthouse/lighthouse
+
+1 chart(s) linted, 0 chart(s) failed
+
+Linting release=tekton, chart=/tmp/083053578/tekton/0.0.48/jenkins-x/tekton/tekton
+==> Linting /tmp/083053578/tekton/0.0.48/jenkins-x/tekton/tekton
+
+1 chart(s) linted, 0 chart(s) failed
+
+Linting release=chartmuseum, chart=/tmp/083053578/chartmuseum/latest/jenkins-x/chartmuseum/chartmuseum
+==> Linting /tmp/083053578/chartmuseum/latest/jenkins-x/chartmuseum/chartmuseum
+
+1 chart(s) linted, 0 chart(s) failed
+
+Linting release=jenkins-servers, chart=../jenkins-servers
+==> Linting ../jenkins-servers
+[INFO] Chart.yaml: icon is recommended
+[INFO] values.yaml: file does not exist
+
+1 chart(s) linted, 0 chart(s) failed
+
