@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: jstrachan
+    provider: github
+    repository: custom-jenkins-sample
+  name: jstrachan-custom-jenkins-sample
+spec:
+  description: Imported application for jstrachan/custom-jenkins-sample
+  httpCloneURL: https://github.com/jstrachan/custom-jenkins-sample.git
+  org: jstrachan
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: custom-jenkins-sample
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/jstrachan/custom-jenkins-sample.git
